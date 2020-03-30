@@ -1,0 +1,10 @@
+<!-- DTD -->
+<?xml version="1.0"?>
+<!DOCTYPE Timetalbe  
+[
+    <!ELEMENT Timetable (Day*)>
+    <!ELEMENT Day (Class+)>
+    <!ELEMENT Class (ClassName, ClassRoom, Teacher, StartTime, EndTime, Type)>
+    <!ATTLIST Day Name CDATA (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday) #REQUIRED>
+]>
+<!-- XML документ -->

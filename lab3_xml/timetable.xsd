@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name='Timetable'>
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                <xsd:element name='Day'>
+                    <xsd:complexType>
+                        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+                            <xsd:element name='Class'>
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="ClassName" type="xsd:string"/>
+                                        <xsd:element name="ClassRoom" type="xsd:string"/>
+                                        <xsd:element name="Teacher" type="xsd:string"/>
+                                        <xsd:element name="StartTime" type="xsd:string"/>
+                                        <xsd:element name="EndTime" type="xsd:string"/>
+                                        <xsd:element name="Type">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:enumeration value="Лекция"/>
+                                                    <xsd:enumeration value="Практика"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="Name" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

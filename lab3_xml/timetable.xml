@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Timetable  
+[
+    <!ELEMENT Timetable (Day*)>
+    <!ELEMENT Day (Class+)>
+    <!ELEMENT Class (ClassName, ClassRoom, Teacher, StartTime, EndTime, Type)>
+    <!ELEMENT ClassName (#PCDATA)>
+    <!ELEMENT ClassRoom (#PCDATA)>
+    <!ELEMENT Teacher (#PCDATA)>
+    <!ELEMENT StartTime (#PCDATA)>
+    <!ELEMENT EndTime (#PCDATA)>
+    <!ELEMENT Type (#PCDATA)>
+    <!ATTLIST Day Name (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday) #REQUIRED>
+]>
+
+<Timetable>
+    <Day Name="Tuesday"> 
+        <Class>
+            <ClassName>ИИ</ClassName>
+            <ClassRoom>519</ClassRoom>
+            <Teacher>Ясницкий</Teacher>
+            <StartTime>8:00</StartTime>
+            <EndTime>9:35</EndTime>
+            <Type>Практика</Type>
+        </Class>
+        <Class>
+            <ClassName>ИИ</ClassName>
+            <ClassRoom>427</ClassRoom>
+            <Teacher>Ясницкий</Teacher>
+            <StartTime>11:30</StartTime>
+            <EndTime>13:05</EndTime>
+            <Type>Практика</Type>
+        </Class>
+    </Day>
+    <Day Name="Wednesday"> 
+        <Class>
+            <ClassName>Преподавание</ClassName>
+            <ClassRoom>407</ClassRoom>
+            <Teacher>Соловьева</Teacher>
+            <StartTime>11:30</StartTime>
+            <EndTime>13:05</EndTime>
+            <Type>Лекция</Type>
+        </Class>
+    </Day>
+    <Day Name="Thursday"> 
+        <Class>
+            <ClassName>Unix</ClassName>
+            <ClassRoom>239</ClassRoom>
+            <Teacher>Анисимов</Teacher>
+            <StartTime>8:00</StartTime>
+            <EndTime>9:35</EndTime>
+            <Type>Практика</Type>
+        </Class>
+        <Class>
+            <ClassName>Технологии обработки документов</ClassName>
+            <ClassRoom>408</ClassRoom>
+            <Teacher>Ланин</Teacher>
+            <StartTime>9:45</StartTime>
+            <EndTime>11:20</EndTime>
+            <Type>Лекция</Type>
+        </Class>
+        <Class>
+            <ClassName>Технологии обработки документов</ClassName>
+            <ClassRoom>427</ClassRoom>
+            <Teacher>Ланин</Teacher>
+            <StartTime>11:30</StartTime>
+            <EndTime>13:05</EndTime>
+            <Type>Практика</Type>
+        </Class>
+        <Class>
+            <ClassName>Технологии обработки документов</ClassName>
+            <ClassRoom>239</ClassRoom>
+            <Teacher>Ланин</Teacher>
+            <StartTime>13:30</StartTime>
+            <EndTime>15:05</EndTime>
+            <Type>Практика</Type>
+        </Class>
+    </Day>
+    <Day Name="Friday"> 
+        <Class>
+            <ClassName>Unix</ClassName>
+            <ClassRoom>239</ClassRoom>
+            <Teacher>Анисимов</Teacher>
+            <StartTime>8:00</StartTime>
+            <EndTime>9:35</EndTime>
+            <Type>Практика</Type>
+        </Class>
+        <Class>
+            <ClassName>Графы</ClassName>
+            <ClassRoom>237</ClassRoom>
+            <Teacher>Дураков</Teacher>
+            <StartTime>9:45</StartTime>
+            <EndTime>11:20</EndTime>
+            <Type>Практика</Type>
+        </Class>
+        <Class>
+            <ClassName>Графы</ClassName>
+            <ClassRoom>216</ClassRoom>
+            <Teacher>Дураков</Teacher>
+            <StartTime>11:30</StartTime>
+            <EndTime>13:05</EndTime>
+            <Type>Лекция</Type>
+        </Class>
+    </Day>
+</Timetable>
